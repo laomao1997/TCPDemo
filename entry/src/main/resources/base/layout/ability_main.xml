@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:padding="15vp">
+
+    <Text
+        ohos:id="$+id:client_state"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:background_element="$graphic:background_ability_main"
+        ohos:text="状态"
+        ohos:text_alignment="center"
+        ohos:text_size="24fp"/>
+
+    <DirectionalLayout
+        ohos:id="$+id:client_lin"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:top_margin="10vp"
+        ohos:orientation="vertical">
+
+        <TextField
+            ohos:id="$+id:text_field_ip"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:hint="IP地址"
+            ohos:text_input_type="pattern_number"
+            ohos:text_size="24fp"/>
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="horizontal">
+
+            <TextField
+                ohos:id="$+id:text_field_port"
+                ohos:height="match_content"
+                ohos:width="0vp"
+                ohos:hint="端口号"
+                ohos:text_size="24fp"
+                ohos:weight="1"/>
+
+            <Button
+                ohos:id="$+id:bt_client_connect"
+                ohos:height="match_content"
+                ohos:width="0vp"
+                ohos:text="连接"
+                ohos:text_size="24fp"
+                ohos:weight="1"/>
+        </DirectionalLayout>
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:top_margin="10vp">
+
+        <TextField
+            ohos:id="$+id:client_sendMsg"
+            ohos:height="match_content"
+            ohos:width="0vp"
+            ohos:hint="请输入发送内容"
+            ohos:text_size="24fp"
+            ohos:weight="2"/>
+
+        <Button
+            ohos:id="$+id:bt_client_send"
+            ohos:height="match_content"
+            ohos:width="0vp"
+            ohos:text="发送"
+            ohos:text_size="24fp"
+            ohos:weight="1"/>
+    </DirectionalLayout>
+
+    <ScrollView
+        ohos:id="$+id:scrollView1"
+        ohos:height="match_parent"
+        ohos:width="match_parent">
+
+        <Text
+            ohos:id="$+id:client_receive"
+            ohos:height="match_parent"
+            ohos:width="match_parent"
+            ohos:text="--"
+            ohos:text_size="24vp"/>
+    </ScrollView>
+
+</DirectionalLayout>
